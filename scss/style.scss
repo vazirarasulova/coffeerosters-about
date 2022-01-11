@@ -54,6 +54,7 @@ body{
   padding: 0;
   margin: 0;
   font-family: "Barlow", "Arial", sans-serif;
+
 }
 
 .container{
@@ -110,11 +111,11 @@ img{
     text-decoration: none;
   }
   
-  .nav__link:hover{
+  &:hover{
     color: #333D4B;
   }
   
-  .nav__link:active{
+  &:active{
     color: #333D4B; 
   }
 }
@@ -124,9 +125,9 @@ img{
   background-image: url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 117px;
+  padding-top: 137px;
   padding-left: 85px;
-  padding-bottom: 116px;
+  padding-bottom: 137px;
   border-radius: 10px;
   
   .hero__info{
@@ -234,6 +235,7 @@ img{
     font-size: 16px;
     line-height: 26px;
     color: #FEFCF7;
+    opacity: 0.8;
   }
 }
 
@@ -280,12 +282,14 @@ img{
   }
   
   .headquarters__address{
+    font-style: normal;
     font-size: 16px;
     line-height: 26px;
     color: #333D4B;
   }
   
   .headquarters__sublink{
+    font-style: normal;
     font-size: 16px;
     line-height: 26px;
     color: #333D4B;
@@ -300,19 +304,22 @@ footer{
     display: flex;
     align-items: center;
     background: #2C343E;
-    padding: 48px 85px;
-    
+    padding: 48px 85px;   
   }
-  
-  .footer__list{
+}
+
+.footer-nav{
+    margin: 0;
+    margin-right: 369px;
+    margin-left: 103px;
+  .footer-nav__list{
     display: flex;
     justify-content: space-between;
     width: 283px;
-    margin-right: 369px;
-    margin-left: 103px;
+    margin: 0;
   }
   
-  .footer__sublink{
+  .footer-nav__link{
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
@@ -322,18 +329,29 @@ footer{
     text-decoration: none;
   }
   
-  .footer__sublink:hover{
+  .footer-nav__link:hover{
     color: #FEFCF7;
   }
   
-  .footer__sublink:active{
+  .footer-nav__link:active{
     color: #FEFCF7;
   }
+}
+
+.footer-icons{
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
   
+  .footer-icons__img{
+    width: 24px;
+    height: 24px;
+  }
+  &:hover{
+    background: #FEFCF7;
+  }
   
-  .footer-link__icons{
-    display: flex;
-    justify-content: space-between;
-    width: 120px;
+  &:active{
+    background: #FEFCF7;
   }
 }
